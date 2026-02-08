@@ -1,0 +1,172 @@
+.header {
+  background-color: rgb(239, 243, 140);
+}
+
+.main {
+  background-color: rgb(106, 106, 232);
+}
+
+.footer {
+  background-color: rgb(210, 239, 152);
+}
+
+/* ===== VARIABLES ===== */
+:root {
+  /* --colores */
+  --color-primary: #7a2e1d;
+  --color-secundary: #f5f1eb;
+  --color-accent: #b63a2b;
+  --color-text: #1f1f1f;
+  --color-white: #fff;
+
+  /* Tipografías */
+  --font-title: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+/* ===== RESET / BASE ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-secundary);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== NAV ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-primary);
+}
+
+h1 {
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* botom hamburguesa */
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-white);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Menú oculto por defecto (mobile) */
+.nav {
+  /* 1️⃣ Layout / posición */
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  /* 2️⃣ Tamaño */
+  width: 60%;
+  height: 100vh;
+
+  /* 3️⃣ Visual */
+  background-color: var(--color-primary);
+
+  /* 4️⃣ Estado oculto */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  /* 5️⃣ Animación */
+  transform: translatex(-100%);
+  transition:
+    opacity 0.45s ease-in-out,
+    transform 0.35s ease-in-out,
+    visibility 0s linear 0.45s; /* ⬅️ clave */
+}
+
+.nav-list {
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.nav-list a {
+  display: block;
+  border-radius: 1.5rem;
+  padding: 0.9rem;
+  width: 100%;
+  color: var(--color-white);
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.1s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secundary);
+}
+
+/* Mostrar menú cuando se activa el checkbox */
+#menu-toggle:checked + .menu-icon + .nav {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translatex(0);
+  transition:
+    transform 0.45s ease-in-out,
+    opacity 0.35s ease-in-out,
+    visibility 0s;
+}
+
+/* ===== HERO ===== */
+
+/* ===== MENU ===== */
+
+/* ===== RESERVATIONS ===== */
+
+/* ===== FOOTER ===== */
