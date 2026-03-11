@@ -1,19 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto V2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="logo">
+      <div class="logo-header">
         <img src="assets/img/logo.png" alt="El Fogón Santandereano" />
       </div>
-
-      <h1>EL FOGÓN SANTANDEREANO</h1>
-
       <!-- BOTON HAMBURGUESA -->
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">
@@ -24,21 +25,148 @@
 
       <!-- NAV -->
       <nav class="nav">
-        <div class="logo">
+        <div class="logo-nav">
           <img src="assets/img/logo.png" alt="" />
         </div>
         <ul class="nav-list">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#reservations">Reservas</a></li>
-          <li><a href="#location">Ubicación</a></li>
+          <li><a href="#address">Ubicación</a></li>
           <li><a href="#hours">Horarios</a></li>
-          <li><a href="#galley">Galeria</a></li>
+          <li><a href="#gallery">Galeria</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main">MAIN</main>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>EL FOGON</h1>
+        <h3>Sabor auténtico Santandereano</h3>
+      </div>
+    </section>
+
+    <main class="main">
+      <section id="menu" class="menu">
+        <article class="menu-btn">
+          <button class="btn">MENU</button>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img
+              src="assets/img/carne-oreada.jpg"
+              alt="Carne oreada santandereana"
+            />
+            <figcaption>
+              <h3>Carne Oreada</h3>
+              <p>
+                Carne de res curada y asada al carbón, acompañada de yuca, arepa
+                santandereana y ají criollo.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img
+              src="assets/img/tamal-santanderano.jpg"
+              alt="Tamal santandereano"
+            />
+            <figcaption>
+              <h3>Tamal Santandereano</h3>
+              <p>
+                Tradicional tamal preparado con maíz, carne de cerdo, pollo y
+                condimentos típicos, envuelto en hoja de plátano.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img src="assets/img/hormiga-culona.jpg" alt="Hormiga culona" />
+            <figcaption>
+              <h3>Hormiga Culona</h3>
+              <p>
+                Ícono gastronómico de Santander. Hormigas tostadas, crujientes y
+                llenas de sabor ancestral.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img src="assets/img/cabro.jpg" alt="Cabro santandereano" />
+            <figcaption>
+              <h3>Cabro</h3>
+              <p>
+                Carne de cabro preparada a fuego lento, servida con yuca, arepa
+                y sabores intensos de la región.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="menu-item">
+          <figure>
+            <img src="assets/img/pepitoria.jpg" alt="Pepitoria santandereana" />
+            <figcaption>
+              <h3>Pepitoria</h3>
+              <p>
+                Plato tradicional a base de vísceras de cabro, arroz y especias,
+                representando la cocina más auténtica santandereana.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="menu-item">
+          <figure>
+            <img src="assets/img/pepitoria.jpg" alt="Arepa santandereana" />
+            <figcaption>
+              <h3>Arepa</h3>
+              <p>
+                Plato tradicional a base de vísceras de cabro, arroz y especias,
+                representando la cocina más auténtica santandereana.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section id="why-us" class="why-us">
+        <h2>¿Por qué elegirnos?</h2>
+
+        <ul class="why-list">
+          <li>Sabor auténtico santandereano.</li>
+          <li>Porciones justas y bien servidas.</li>
+          <li>Precios populares.</li>
+          <li>Ambiente sencillo y acogedor.</li>
+          <li>Ideal para almuerzos diarios y comidas en familia.</li>
+        </ul>
+        <p>
+          Te esperamos en El Fogón Santandereano,<br />
+          donde la comida se hace con tradición y corazón.
+        </p>
+      </section>
+      <section id="address" class="address">
+        <h2>Ubicación</h2>
+        <p>Bucaramanga, Santander</p>
+        <p>
+          Un lugar fácil de llegar, pensado para que te sientas cómodo y bien
+          atendido.
+        </p>
+        <a href="#" class="btn">Cómo llegar</a>
+      </section>
+      <section id="hours" class="schedule">
+        <h2>Horarios</h2>
+        <p>Lunes a sábado</p>
+        <p>9:00 a.m. – 4:00 p.m.</p>
+      </section>
+    </main>
     <footer class="footer">FOOTER</footer>
     <script src="menu.js"></script>
   </body>
