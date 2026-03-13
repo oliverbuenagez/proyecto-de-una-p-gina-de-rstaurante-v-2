@@ -277,12 +277,54 @@ section {
   object-fit: cover;
 }
 
-/* ===== RESERVATIONS ===== */
+/* ===== WHY-US ===== */
 
 .why-us {
   width: 100%;
   padding: 3rem 1.5rem;
   text-align: center;
+  background-color: var(--color-primary);
+}
+
+.why-us h2 {
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.why-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.why-item {
+  padding: 1.5rem;
+  background-color: var(--color-bg);
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.why-item h3 {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.why-item p {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.why-closing {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 .address {
@@ -295,6 +337,92 @@ section {
   width: 100%;
   padding: 3rem 1.5rem;
   text-align: center;
+}
+/* ===== ADDRESS ===== */
+
+.address {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: var(--color-bg);
+}
+
+.address h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+.address-info {
+  margin-bottom: 1.5rem;
+}
+
+.address-info p {
+  margin: 0.3rem 0;
+  color: var(--color-text);
+}
+
+.address-street {
+  font-weight: 600;
+  color: var(--color-primary) !important;
+}
+
+.address-map {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== ADDRESS ===== */
+.schedule {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: var(--color-primary);
+}
+
+.schedule h2 {
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.schedule-grid {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-bg);
+  border-radius: 10px;
+}
+
+.schedule-day {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.schedule-time {
+  color: var(--color-secundary);
+  font-weight: 500;
+}
+
+.schedule-row.closed .schedule-day,
+.schedule-row.closed .schedule-time {
+  color: #999;
+}
+
+.schedule-note {
+  color: var(--color-accent);
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 /* ===== FOOTER ===== */

@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto V2</title>
+    <title>El Fogón Santandereano</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/claud.css" />
   </head>
   <body>
     <header class="header">
       <div class="logo-header">
         <img src="assets/img/logo.png" alt="El Fogón Santandereano" />
       </div>
+
       <!-- BOTON HAMBURGUESA -->
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">
@@ -26,31 +27,34 @@
       <!-- NAV -->
       <nav class="nav">
         <div class="logo-nav">
-          <img src="assets/img/logo.png" alt="" />
+          <img src="assets/img/logo.png" alt="El Fogón Santandereano" />
         </div>
         <ul class="nav-list">
           <li><a href="#home">Inicio</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#why-us">¿Por qué nosotros?</a></li>
+          <li><a href="#gallery">Galería</a></li>
           <li><a href="#reservations">Reservas</a></li>
           <li><a href="#address">Ubicación</a></li>
           <li><a href="#hours">Horarios</a></li>
-          <li><a href="#gallery">Galeria</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- HERO -->
     <section id="home" class="hero">
       <div class="hero-content">
-        <h1>EL FOGON</h1>
-        <h3>Sabor auténtico Santandereano</h3>
+        <h1>El Fogón</h1>
+        <h2>Sabor auténtico Santandereano</h2>
       </div>
     </section>
 
     <main class="main">
+      <!-- MENÚ -->
       <section id="menu" class="menu">
         <article class="menu-btn">
-          <button class="btn">MENU</button>
+          <button class="btn">Menú</button>
         </article>
 
         <article class="menu-item">
@@ -123,51 +127,309 @@
             </figcaption>
           </figure>
         </article>
+
         <article class="menu-item">
           <figure>
-            <img src="assets/img/pepitoria.jpg" alt="Arepa santandereana" />
+            <img
+              src="assets/img/arepa-santandereana.jpg"
+              alt="Arepa santandereana"
+            />
             <figcaption>
-              <h3>Arepa</h3>
+              <h3>Arepa Santandereana</h3>
               <p>
-                Plato tradicional a base de vísceras de cabro, arroz y especias,
-                representando la cocina más auténtica santandereana.
+                Arepa de maíz pelado, símbolo de la mesa santandereana. Crocante
+                por fuera y suave por dentro.
               </p>
             </figcaption>
           </figure>
         </article>
       </section>
 
+      <!-- POR QUÉ ELEGIRNOS -->
       <section id="why-us" class="why-us">
         <h2>¿Por qué elegirnos?</h2>
 
         <ul class="why-list">
-          <li>Sabor auténtico santandereano.</li>
-          <li>Porciones justas y bien servidas.</li>
-          <li>Precios populares.</li>
-          <li>Ambiente sencillo y acogedor.</li>
-          <li>Ideal para almuerzos diarios y comidas en familia.</li>
+          <li class="why-item">
+            <h3>Sabor auténtico</h3>
+            <p>
+              Recetas tradicionales santandereanas de generación en generación.
+            </p>
+          </li>
+          <li class="why-item">
+            <h3>Porciones generosas</h3>
+            <p>Platos bien servidos para que salgas satisfecho siempre.</p>
+          </li>
+          <li class="why-item">
+            <h3>Precios populares</h3>
+            <p>Comida de calidad al alcance de todos los bolsillos.</p>
+          </li>
+          <li class="why-item">
+            <h3>Ambiente acogedor</h3>
+            <p>Un espacio sencillo y tranquilo para disfrutar en familia.</p>
+          </li>
+          <li class="why-item">
+            <h3>Ideal en familia</h3>
+            <p>Perfecto para almuerzos diarios y reuniones especiales.</p>
+          </li>
         </ul>
-        <p>
+
+        <p class="why-closing">
           Te esperamos en El Fogón Santandereano,<br />
           donde la comida se hace con tradición y corazón.
         </p>
       </section>
+
+      <!-- GALERÍA -->
+      <section id="gallery" class="gallery">
+        <h2>Galería</h2>
+        <p class="gallery-subtitle">Un vistazo a nuestro fogón</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="assets/img/gallery-1.jpg"
+              alt="Platos típicos santandereanos"
+            />
+            <div class="gallery-overlay">
+              <p>Platos típicos</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="assets/img/gallery-2.jpg"
+              alt="Ambiente del restaurante"
+            />
+            <div class="gallery-overlay">
+              <p>Nuestro ambiente</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/img/gallery-3.jpg" alt="Carne oreada al carbón" />
+            <div class="gallery-overlay">
+              <p>Al carbón</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/img/gallery-4.jpg" alt="Tamales santandereanos" />
+            <div class="gallery-overlay">
+              <p>Tamales frescos</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/img/gallery-5.jpg" alt="Mesa servida" />
+            <div class="gallery-overlay">
+              <p>Mesa servida</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/img/gallery-6.jpg" alt="Postres y bebidas" />
+            <div class="gallery-overlay">
+              <p>Postres y bebidas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESERVAS -->
+      <section id="reservations" class="reservations">
+        <h2>Reservas</h2>
+        <p class="reservations-subtitle">Asegura tu mesa con anticipación</p>
+
+        <div class="reservations-content">
+          <!-- FORMULARIO -->
+          <div class="reservations-form-wrapper">
+            <h3>Reserva tu mesa</h3>
+            <form class="reservations-form">
+              <div class="form-group">
+                <label for="res-name">Nombre completo</label>
+                <input type="text" id="res-name" placeholder="Tu nombre" />
+              </div>
+
+              <div class="form-group">
+                <label for="res-phone">Teléfono</label>
+                <input
+                  type="tel"
+                  id="res-phone"
+                  placeholder="Tu número de contacto"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="res-date">Fecha</label>
+                <input type="date" id="res-date" />
+              </div>
+
+              <div class="form-group">
+                <label for="res-time">Hora</label>
+                <input type="time" id="res-time" min="09:00" max="15:30" />
+              </div>
+
+              <div class="form-group">
+                <label for="res-people">Número de personas</label>
+                <select id="res-people">
+                  <option value="">Selecciona</option>
+                  <option value="1">1 persona</option>
+                  <option value="2">2 personas</option>
+                  <option value="3">3 personas</option>
+                  <option value="4">4 personas</option>
+                  <option value="5">5 o más personas</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-full">Reservar mesa</button>
+            </form>
+          </div>
+
+          <!-- WHATSAPP -->
+          <div class="reservations-whatsapp">
+            <h3>¿Prefieres escribirnos?</h3>
+            <p>
+              También puedes hacer tu reserva directamente por WhatsApp. Te
+              respondemos rápido.
+            </p>
+            <a
+              href="https://wa.me/573001234567?text=Hola,%20quiero%20hacer%20una%20reserva"
+              target="_blank"
+              class="btn btn-whatsapp"
+            >
+              Reservar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- UBICACIÓN -->
       <section id="address" class="address">
         <h2>Ubicación</h2>
-        <p>Bucaramanga, Santander</p>
-        <p>
-          Un lugar fácil de llegar, pensado para que te sientas cómodo y bien
-          atendido.
-        </p>
-        <a href="#" class="btn">Cómo llegar</a>
+
+        <div class="address-info">
+          <p class="address-street">📍 Calle 35 #28-40, Cabecera del Llano</p>
+          <p>Bucaramanga, Santander</p>
+          <p>
+            Un lugar fácil de llegar, pensado para que te sientas cómodo y bien
+            atendido.
+          </p>
+          <a href="https://maps.google.com" target="_blank" class="btn"
+            >Cómo llegar</a
+          >
+        </div>
+
+        <div class="address-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1!2d-73.1198!3d7.1193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f34a2e3b1a1%3A0x1234567890abcdef!2sBucaramanga%2C%20Santander!5e0!3m2!1ses!2sco!4v1234567890"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </section>
+
+      <!-- HORARIOS -->
       <section id="hours" class="schedule">
         <h2>Horarios</h2>
-        <p>Lunes a sábado</p>
-        <p>9:00 a.m. – 4:00 p.m.</p>
+
+        <div class="schedule-grid">
+          <div class="schedule-row">
+            <span class="schedule-day">Lunes – Sábado</span>
+            <span class="schedule-time">9:00 a.m. – 4:00 p.m.</span>
+          </div>
+          <div class="schedule-row closed">
+            <span class="schedule-day">Domingo</span>
+            <span class="schedule-time">Cerrado</span>
+          </div>
+        </div>
+
+        <p class="schedule-note">¡Te esperamos de lunes a sábado!</p>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <p class="contact-subtitle">Estamos para atenderte</p>
+
+        <div class="contact-content">
+          <!-- FORMULARIO -->
+          <div class="contact-form-wrapper">
+            <h3>Envíanos un mensaje</h3>
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="con-name">Nombre</label>
+                <input type="text" id="con-name" placeholder="Tu nombre" />
+              </div>
+
+              <div class="form-group">
+                <label for="con-email">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="con-email"
+                  placeholder="tu@correo.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="con-message">Mensaje</label>
+                <textarea
+                  id="con-message"
+                  rows="4"
+                  placeholder="¿En qué podemos ayudarte?"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-full">Enviar mensaje</button>
+            </form>
+          </div>
+
+          <!-- REDES Y WHATSAPP -->
+          <div class="contact-info">
+            <h3>También nos encuentras en</h3>
+
+            <ul class="contact-links">
+              <li>
+                <a
+                  href="https://wa.me/573001234567"
+                  target="_blank"
+                  class="contact-link whatsapp"
+                >
+                  WhatsApp — +57 300 123 4567
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com/elfogonsantandereano"
+                  target="_blank"
+                  class="contact-link instagram"
+                >
+                  Instagram — @elfogonsantandereano
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://facebook.com/elfogonsantandereano"
+                  target="_blank"
+                  class="contact-link facebook"
+                >
+                  Facebook — El Fogón Santandereano
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="footer">FOOTER</footer>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2025 El Fogón Santandereano. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="menu.js"></script>
   </body>
 </html>
